@@ -17,6 +17,9 @@ A full-stack web application that provides personalized movie recommendations ba
 🎨 **Beautiful UI** - Modern gradient design with smooth interactions
 🔄 **Real-time Feedback** - Loading states and error handling
 
+ ##output:
+ <img width="1917" height="911" alt="image" src="https://github.com/user-attachments/assets/fb008ec8-4168-479e-adda-d7255e2fdc37" />
+
 ## Tech Stack
 
 ### Backend
@@ -199,7 +202,7 @@ The application includes a curated database of popular movies across all genres,
 
 ## License
 
-MIT License - Feel free to use this project for learning and development purposes.
+ Feel free to use this project for learning and development purposes.
 
 ## Author
 
