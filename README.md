@@ -119,6 +119,48 @@ curl -X POST http://localhost:5000/recommend \
   -d '{"userInput":"action movies with fight scenes"}'
 ```
 
+### Example Outputs
+
+#### Request: "a movie where there is the action fight"
+**Response:**
+```json
+{
+  "movies": "Based on your preferences, here are my movie recommendations:\n\n1. John Wick (2014) - An intense action thriller with incredible fight choreography\n2. Mad Max: Fury Road (2015) - Non-stop action with stunning visuals\n3. The Matrix (1999) - Groundbreaking action sci-fi classic\n4. Atomic Blonde (2017) - Stylish action with impressive fight sequences\n5. Mission: Impossible - Fallout (2018) - High-octane action spectacle"
+}
+```
+
+#### Request: "I want funny movies"
+**Response:**
+```json
+{
+  "movies": "Based on your preferences, here are my movie recommendations:\n\n1. The Grand Budapest Hotel (2014) - Quirky and visually stunning comedy\n2. Superbad (2007) - Hilarious coming-of-age comedy\n3. The Pink Panther (2006) - Classic slapstick comedy\n4. Get Hard (2015) - Funny buddy comedy\n5. Tropic Thunder (2008) - Action-packed comedy"
+}
+```
+
+#### Request: "sci-fi space movies"
+**Response:**
+```json
+{
+  "movies": "Based on your preferences, here are my movie recommendations:\n\n1. Inception (2010) - Mind-bending sci-fi thriller\n2. Interstellar (2014) - Epic space exploration\n3. The Terminator (1991) - Sci-fi action classic\n4. Blade Runner 2049 (2017) - Visually stunning sci-fi\n5. Avatar (2009) - Revolutionary sci-fi epic"
+}
+```
+
+#### Request: "horror scary movies"
+**Response:**
+```json
+{
+  "movies": "Based on your preferences, here are my movie recommendations:\n\n1. The Shining (1980) - Psychological horror masterpiece\n2. The Exorcist (1973) - Classic supernatural horror\n3. Hereditary (2018) - Modern horror gem\n4. Insidious (2010) - Terrifying supernatural thriller\n5. A Quiet Place (2018) - Innovative suspense horror"
+}
+```
+
+#### Request: "romantic love movies"
+**Response:**
+```json
+{
+  "movies": "Based on your preferences, here are my movie recommendations:\n\n1. The Notebook (2004) - Heartwarming romantic drama\n2. Titanic (1997) - Epic romance and disaster\n3. La La Land (2016) - Modern romantic musical\n4. Pride and Prejudice (2005) - Classic romance\n5. The Fault in Our Stars (2014) - Emotional teen romance"
+}
+```
+
 ## Database
 
 The application uses SQLite with the following schema:
