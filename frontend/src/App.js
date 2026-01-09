@@ -7,6 +7,8 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
+  const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
   const handleRecommend = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -14,7 +16,7 @@ function App() {
     setRecommendations('');
 
     try {
-      const response = await fetch('/recommend', {
+      const response = await fetch(`${API_URL}/recommend`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
