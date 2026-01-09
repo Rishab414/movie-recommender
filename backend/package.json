@@ -1,0 +1,19 @@
+{
+  "name": "movie-recommender-backend",
+  "version": "1.0.0",
+  "description": "Movie recommender backend with Groq AI",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@fastify/cors": "^11.2.0",
+    "fastify": "^5.6.2",
+    "sqlite3": "^5.1.7"
+  }
+}
