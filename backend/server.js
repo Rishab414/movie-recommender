@@ -1,9 +1,20 @@
 const Fastify = require('fastify');
 const cors = require('@fastify/cors');
+const path = require('path');
+const fs = require('fs');
 const db = require('./db');
 
 const fastify = Fastify({ logger: true });
 fastify.register(cors, { origin: true });
+
+// Serve static frontend files in production
+const frontendPath = path.join(__dirname, '../frontend/build');
+if (fs.existsSync(frontendPath)) {
+  fastify.register(require('@fastify/static'), {
+    root: frontendPath,
+    prefix: '/'
+  });
+}
 
 // Movie database with recommendations
 const movieDatabase = {
