@@ -1,0 +1,14 @@
+{
+  "name": "movie-recommender",
+  "version": "1.0.0",
+  "description": "Full-stack movie recommender app",
+  "main": "backend/server.js",
+  "scripts": {
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install && cd ..",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
