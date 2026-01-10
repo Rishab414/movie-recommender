@@ -113,7 +113,10 @@ fastify.post('/recommend', async (request, reply) => {
   }
 });
 
-fastify.listen({ port: 5000 }, (err) => {
+const PORT = process.env.PORT || 5000;
+const HOST = process.env.HOST || '0.0.0.0';
+
+fastify.listen({ port: PORT, host: HOST }, (err) => {
   if (err) throw err;
-  console.log("Server running on http://localhost:5000");
+  console.log(`Server running on http://localhost:${PORT}`);
 });
